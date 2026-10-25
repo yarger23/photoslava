@@ -18,7 +18,7 @@ def build():
     if dist.exists(): shutil.rmtree(dist)
     shutil.copytree(ROOT / 'public', dist)
     hashes = {}
-    for p in (dist / 'assets').rglob('*'):
+    for p in dist.rglob('*'):
         if p.is_file(): hashes['/' + p.relative_to(dist).as_posix()] = hashlib.sha256(p.read_bytes()).hexdigest()[:12]
     components = {p.stem.upper():p.read_text() for p in (ROOT / 'source/components').glob('*.html')}
     for route, filename in routes.items():
