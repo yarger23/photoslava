@@ -1,0 +1,18 @@
+{
+  "/": "home.html",
+  "/portfolio": "portfolio.html",
+  "/fotosessiya-na-prirode": "fotosessiya-na-prirode.html",
+  "/fotosessiya-v-studii": "fotosessiya-v-studii.html",
+  "/services": "services.html",
+  "/articles": "articles.html",
+  "/contacts": "contacts.html",
+  "/syuzhetnyy-portret": "syuzhetnyy-portret.html",
+  "/about": "about.html",
+  "/portfolio/tihiy-vecher-u-vody": "portfolio__tihiy-vecher-u-vody.html",
+  "/portfolio/v-trave-s-knigoy": "portfolio__v-trave-s-knigoy.html",
+  "/portfolio/krasnaya-komnata": "portfolio__krasnaya-komnata.html",
+  "/portfolio/soft-light": "portfolio__soft-light.html",
+  "/articles/chto-delat-esli-ne-umeete-pozirovat": "articles__chto-delat-esli-ne-umeete-pozirovat.html",
+  "/articles/studiya-ili-ulitsa-kak-vybrat-lokatsiyu": "articles__studiya-ili-ulitsa-kak-vybrat-lokatsiyu.html",
+  "/articles/chto-nadet-na-portretnuyu-fotosessiyu": "articles__chto-nadet-na-portretnuyu-fotosessiyu.html"
+}
