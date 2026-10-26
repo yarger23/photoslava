@@ -21,3 +21,22 @@ html{scroll-padding-top:104px}body{font-size:16px;line-height:1.5}a,button{-webk
 /* Preserve the existing live header dimensions and typography. */
 .site-header{line-height:normal}.site-header .container{width:min(calc(100% - 28px),1480px)}
 @media(min-width:980px){.site-header .container{width:min(calc(100% - 48px),1480px)}}
+
+/* Footer polish: bounded columns, touch-friendly links, clean contacts. */
+.footer{padding:40px 0 20px}
+.footer-main{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr) auto;align-items:start;gap:40px}
+.footer-identity{display:grid;gap:14px;min-width:0}
+.footer-brand{width:max-content;font-size:27px}
+.footer-identity p{font-size:13px;line-height:1.7}
+.footer-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;justify-content:start}
+.footer-nav a{display:flex;align-items:center;min-height:38px;font-size:14px;width:fit-content}
+.footer-nav a:hover,.footer-bottom a:hover{text-decoration:underline;text-underline-offset:4px}
+.footer-contact{grid-column:auto;justify-self:end;text-align:right;gap:12px}
+.footer-contact>a{display:inline-flex;align-items:center;min-height:38px;white-space:nowrap;font-size:15px}
+.footer-contact div{justify-content:flex-end}
+.footer-contact div a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink)}
+.footer-contact div a:hover{background:var(--soft)}
+.footer-bottom{align-items:center;margin-top:30px;padding-top:16px;gap:12px}
+.footer-bottom>a{display:inline-flex;align-items:center;min-height:44px;justify-self:end}
+@media(max-width:979px){.footer-main{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 36px}.footer-contact{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;justify-self:stretch;text-align:left}.footer-contact div{justify-content:flex-start}}
+@media(max-width:600px){.footer{padding:30px 0 16px}.footer-main{grid-template-columns:minmax(0,1fr);gap:24px}.footer-nav{border-top:1px solid var(--line);padding-top:14px;gap:0 20px}.footer-nav a{min-height:44px}.footer-contact{grid-column:auto;flex-wrap:wrap;gap:10px 20px;border-top:1px solid var(--line);padding-top:18px}.footer-contact>a{font-size:15px}.footer-bottom{margin-top:24px;font-size:11px}}
