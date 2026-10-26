@@ -61,7 +61,8 @@
       if (!form.reportValidity()) return;
       const name = form.querySelector('[data-name]').value.trim();
       const idea = form.querySelector('[data-message]').value.trim();
-      const message = [name ? `Здравствуйте! Меня зовут ${name}.` : 'Здравствуйте!', idea || 'Хочу обсудить портретную съёмку.'].join('\n\n');
+      const contact = form.querySelector('[data-contact]')?.value.trim();
+      const message = [name ? `Здравствуйте! Меня зовут ${name}.` : 'Здравствуйте!', idea || 'Хочу обсудить портретную съёмку.', contact ? `Для связи: ${contact}` : ''].filter(Boolean).join('\n\n');
       const destination = new URL(form.action);
       // Official Telegram username deep link: text is a draft, not an automatic send.
       destination.searchParams.set('text', message);
